@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ."
+    "sass": "sass --watch .",
+    "wp-sass": "sass --style=compressed --watch components:components --watch blocks:blocks --watch assets/styles/main.scss:assets/styles/main.css"
   },
   "author": "",
   "license": "ISC",

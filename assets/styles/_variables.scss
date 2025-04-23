@@ -2,36 +2,38 @@
 
 :root {
     // colors
-    --color-primary: #fff;
-    --color-secondary: #518f4d;
-    --color-secondary-alt: #0f250d;
-    --color-secondary-alt-2: #00b300;
-    --color-accent: #da7c2d;
-    --color-accent-alt: #ff8562;
-    --color-accent-alt-2: #ff5500;
-    --color-gray: #b3b3b3;
-    --color-black: #0d0d0d;
+    --color-white: #fff;
+    --color-white-alt: #f5f5f5;
+    --color-white-alt-2: #fcfcfc;
+
+    --color-black: #000;
+    --color-black-alt: #1e1e1e;
+    --color-black-alt-2: #0b0b0b;
+
+    --color-gray: #6d6d6d;
+    --color-gray-alt: #505154;
+
+    --color-theme: #254cba;
 
     // fonts
-    --font-primary: "Futura", sans-serif;
-    --font-size-xxl: #{fluid(72, 42)};
-    --font-size-xl: #{fluid(42, 30)};
-    --font-size-l: #{fluid(36, 24)};
-    --font-size-md: #{fluid(24, 20)};
-    --font-size-s: #{fluid(18, 16)};
-    --font-size-xs: 16px;
+    --font-primary: "Inter", sans-serif;
+    --font-size-xxl: #{fluid(46, 28)};
+    --font-size-xl: #{fluid(42, 28)};
+    --font-size-l: #{fluid(24, 16)};
+    --font-size-md: 14;
+    --font-size-s: #{fluid(12, 10)};
+    --font-size-xs: 10;
 
     // margins
-    --section-padding-y: #{fluid(150, 60)};
-    --container-width: 1200px;
-    --container-padding-x: 16px;
-    --header-height: #{fluid(80, 64)};
+    --section-padding-y: 64px;
+    // --section-padding-y-l: 110px;
+    --container-width: 1155px;
+    --container-padding-x: 22.5px;
+    // --header-height: #{fluid(80, 64)};
 
     // borders
-    --radius-xl: 50px;
-    --radius-l: 20px;
-    --radius-md: 15px;
-    --radius-s: 11px;
+    --radius-l: 8px;
+    --radius-md: 4px;
 
     // transitions
     --transition-duration: 0.2s;
