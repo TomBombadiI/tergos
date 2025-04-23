@@ -1,0 +1,16 @@
+{
+  "name": "pro/tergos",
+  "autoload": {
+    "psr-4": {
+      "Pro\\Tergos\\": "src/"
+    }
+  },
+  "require": {
+    "johnpbloch/wordpress": "^6.8"
+  },
+  "config": {
+    "allow-plugins": {
+      "johnpbloch/wordpress-core-installer": true
+    }
+  }
+}

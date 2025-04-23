@@ -1,0 +1,39 @@
+@use "helpers" as *;
+
+:root {
+    // colors
+    --color-primary: #fff;
+    --color-secondary: #518f4d;
+    --color-secondary-alt: #0f250d;
+    --color-secondary-alt-2: #00b300;
+    --color-accent: #da7c2d;
+    --color-accent-alt: #ff8562;
+    --color-accent-alt-2: #ff5500;
+    --color-gray: #b3b3b3;
+    --color-black: #0d0d0d;
+
+    // fonts
+    --font-primary: "Futura", sans-serif;
+    --font-size-xxl: #{fluid(72, 42)};
+    --font-size-xl: #{fluid(42, 30)};
+    --font-size-l: #{fluid(36, 24)};
+    --font-size-md: #{fluid(24, 20)};
+    --font-size-s: #{fluid(18, 16)};
+    --font-size-xs: 16px;
+
+    // margins
+    --section-padding-y: #{fluid(150, 60)};
+    --container-width: 1200px;
+    --container-padding-x: 16px;
+    --header-height: #{fluid(80, 64)};
+
+    // borders
+    --radius-xl: 50px;
+    --radius-l: 20px;
+    --radius-md: 15px;
+    --radius-s: 11px;
+
+    // transitions
+    --transition-duration: 0.2s;
+    --transition-duration-longer: 0.4s;
+}
