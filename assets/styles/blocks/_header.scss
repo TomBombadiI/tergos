@@ -1,0 +1,29 @@
+@use "../helpers" as *;
+
+.header {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    padding-block: 1rem;
+    position: relative;
+
+    @include mobile {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: var(--container-padding-x);
+        right: var(--container-padding-x);
+        height: 1px;
+        background-color: var(--color-gray);
+        opacity: 0.16;
+      }
+    }
+  }
+
+  &__logo {
+    max-width: fluid(193, 145);
+  }
+}

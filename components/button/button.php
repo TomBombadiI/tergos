@@ -1,8 +1,8 @@
 <?php
 
-$href = get_field('href');
-$label = get_field('label');
-$icon = get_field('icon');
+$href = $block['href'] ?? get_field('href');
+$label = $block['label'] ?? get_field('label');
+$icon = $block['icon'] ?? get_field('icon');
 $icon_src = assets_path("/icons/{$icon}.svg");
 
 $tag_name = $href ? 'a' : 'button';
