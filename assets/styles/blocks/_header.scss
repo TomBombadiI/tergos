@@ -24,6 +24,13 @@
   }
 
   &__logo {
+    display: inline-flex;
+    align-items: center;
     max-width: fluid(193, 145);
+
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }

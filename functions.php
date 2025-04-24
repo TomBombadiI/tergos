@@ -22,3 +22,14 @@ function add_class_modificator(string $class_name, string $modificator): string
 
   return $class_name . ($modificator ? " {$class_name}--" . $modificator : '');
 }
+
+function get_logo_svg_src(): string
+{
+  $logo_src = get_field('logo', 'option');
+  return file_get_contents($logo_src);
+}
+
+function get_acf_option(string $key): mixed
+{
+  return get_field($key, 'option');
+}

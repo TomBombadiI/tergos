@@ -65,12 +65,12 @@ svg * {
 a {
     color: inherit;
 
-    @include hover {
-        color: var(--color-theme);
-    }
-
     &[class] {
         text-decoration: none;
+    }
+
+    @include hover {
+        text-decoration: underline;
     }
 }
 

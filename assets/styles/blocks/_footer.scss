@@ -1,0 +1,137 @@
+@use "../helpers" as *;
+
+.footer {
+  padding-block: var(--section-padding-y);
+  background-color: var(--color-black-alt);
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+
+  &__top {
+    --columnCount: 3;
+    --columnGap: 1rem;
+
+    display: grid;
+    row-gap: 2rem;
+
+    @include mobile {
+      --columnCount: 2;
+    }
+
+    &-nav {
+      display: grid;
+      grid-template-columns: repeat(var(--columnCount), 1fr);
+      gap: 2rem var(--columnGap);
+    }
+
+    &-group {
+      @include mobile {
+        &--width100-on-mobile {
+          grid-column: 1 / -1;
+        }
+      }
+
+      &-title {
+        margin-bottom: 1rem;
+        font-weight: 700;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+
+      &-list {
+        display: grid;
+        row-gap: 0.5rem;
+      }
+
+      &-item {
+        font-size: 12px;
+
+        &--l {
+          font-size: fluid(14, 12);
+        }
+
+        &--xl {
+          font-weight: 500;
+          font-size: fluid(24, 20);
+        }
+      }
+    }
+
+    &-extra {
+      display: grid;
+      grid-template-columns: repeat(var(--columnCount), 1fr);
+      gap: var(--columnGap);
+      font-size: 12px;
+      color: var(--color-white);
+      opacity: 0.6;
+
+      @include mobile-s {
+        font-size: 10px;
+        gap: 10px;
+      }
+
+      &-item {
+        display: grid;
+        row-gap: 0.25rem;
+
+        @include mobile {
+          &:has(:nth-child(2):last-child) {
+            display: contents;
+          }
+
+          &:has(.footer__top-extra-item) {
+            order: 1;
+          }
+
+          &:has(.footer__top-extra-policy) {
+            order: 3;
+          }
+        }
+      }
+
+      &-inn {
+        order: 2;
+      }
+
+      &-kpp {
+        order: 4;
+      }
+
+      a {
+        text-decoration: none;
+
+        @include hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__middle {
+    padding-block: fluid(64, 48) 24px;
+    font-family: var(--font-primary);
+    font-size: 168px;
+    color: var(--color-white);
+    opacity: 0.16;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: -8px;
+
+    @include mobile-s {
+      letter-spacing: -4px;
+    }
+
+    p {
+      padding-block: 1rem;
+      line-height: 1;
+      border-block: 1px solid var(--color-white);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    font-size: 10px;
+  }
+}
