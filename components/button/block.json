@@ -1,0 +1,38 @@
+{
+  "name": "tergos/button",
+  "title": "Кнопка",
+  "description": "Кнопка",
+  "style": [
+    "file:./button.css"
+  ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": [
+    "button"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "button.php"
+  },
+  "supports": {
+    "color": {
+      "text": true,
+      "background": true
+    }
+  },
+  "styles": [
+    {
+      "name": "default",
+      "label": "Обычная",
+      "isDefault": true
+    },
+    {
+      "name": "transparent",
+      "label": "Прозрачная"
+    },
+    {
+      "name": "square",
+      "label": "Квадратная"
+    }
+  ]
+}

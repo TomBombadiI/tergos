@@ -2,19 +2,22 @@
 
 const VERSION = "1.0.0";
 
+require __DIR__ . '/core/editor-settings.php';
+require __DIR__ . '/core/register-blocks.php';
+
 function assets(string $path): string
 {
   return get_template_directory_uri() . '/assets' . $path;
 }
 
-add_theme_support('editor-styles');
-add_editor_style('assets/styles/main.css');
+function assets_path(string $path): string
+{
+  return get_template_directory() . '/assets' . $path;
+}
 
-add_filter('block_editor_settings_all', function ($editor_settings) {
-  $css = '.edit-post-visual-editor__post-title-wrapper {
-      display: none;
-  }';
+function add_class_modificator(string $class_name, string $modificator): string
+{
+  $modificator = str_replace('is-style-', '', $modificator);
 
-  $editor_settings['styles'][] = ['css' => $css];
-  return $editor_settings;
-});
+  return $class_name . ($modificator ? " {$class_name}--" . $modificator : '');
+}

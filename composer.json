@@ -12,5 +12,8 @@
     "allow-plugins": {
       "johnpbloch/wordpress-core-installer": true
     }
+  },
+  "require-dev": {
+    "php-stubs/acf-pro-stubs": "^6.3"
   }
 }

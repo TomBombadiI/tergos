@@ -66,7 +66,7 @@ a {
     color: inherit;
 
     @include hover {
-        color: var(--color-secondary-alt-2);
+        color: var(--color-theme);
     }
 
     &[class] {
@@ -118,4 +118,19 @@ a {
     to {
         transform: translateX(-50%) translateY(-50%) rotate(360deg);
     }
+}
+
+.wp-block[data-type^="tergos"] {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.wp-block {
+    max-width: none !important;
+}
+
+.is-root-container {
+    max-width: 1440px !important;
+    margin-inline: auto !important;
 }

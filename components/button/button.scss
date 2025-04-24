@@ -1,0 +1,57 @@
+@use "../../assets/styles/helpers" as *;
+
+._button {
+  @include flex-center(true);
+
+  column-gap: .25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--color-white);
+  background-color: var(--color-theme);
+  padding: 17px 24px;
+  border: none;
+  border-radius: var(--radius-md);
+  line-height: 1.15;
+  text-decoration: none;
+  transition-duration: var(--transition-duration);
+
+
+  @include hover {
+    color: var(--color-white);
+    background-color: var(--color-theme-alt);
+  }
+
+  &:active {
+    scale: 1.01;
+    color: var(--color-white);
+  }
+
+  &--transparent {
+    color: var(--color-black-alt);
+    background-color: transparent;
+    padding: fluid(10, 6) fluid(12, 6);
+    border: 1px solid var(--color-black-alt);
+
+    @include hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: var(--color-black-alt);
+    }
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: var(--color-black-alt);
+    }
+  }
+
+  &--square {
+    @include square(32px);
+
+    overflow: hidden;
+    padding: 0;
+  }
+
+  & .icon {
+    display: inline-flex;
+  }
+}
