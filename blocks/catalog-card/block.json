@@ -1,0 +1,17 @@
+{
+  "name": "blocks/catalog-card",
+  "title": "Карточка каталога",
+  "description": "Карточка каталога",
+  "style": [
+    "file:./catalog-card.css"
+  ],
+  "category": "layout",
+  "icon": "page",
+  "keywords": [
+    "catalog-card"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "catalog-card.php"
+  }
+}

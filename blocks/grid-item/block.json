@@ -1,0 +1,20 @@
+{
+  "name": "tergos/grid-item",
+  "title": "Элемент сетки",
+  "description": "Элемент сетки",
+  "style": [
+    "file:./grid-item.css"
+  ],
+  "category": "layout",
+  "icon": "grid-view",
+  "keywords": [
+    "grid"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "grid-item.php"
+  },
+  "supports": {
+    "innerBlocks": true
+  }
+}

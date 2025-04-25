@@ -1,0 +1,69 @@
+@use "../../assets/styles/helpers" as *;
+
+.grid {
+  display: grid;
+  row-gap: 1rem;
+
+  &__list {
+    --column-count: 3;
+
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), 1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem 1rem;
+
+    @include mobile {
+      --column-count: 2;
+    }
+
+    @include mobile-s {
+      --column-count: 1;
+    }
+
+    &--2 {
+      --column-count: 2;
+    }
+
+    &--1 {
+      --column-count: 1;
+    }
+
+    @include mobile-s {
+      --column-count: 1;
+    }
+  }
+
+  &__controls {
+    color: var(--color-gray-alt-2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 0.5rem;
+  }
+
+  &__control {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+
+    @include hover {
+      color: var(--color-theme);
+    }
+
+    &.is-active {
+      color: var(--color-theme);
+    }
+
+    svg {
+      pointer-events: none;
+    }
+  }
+
+  &__item {
+    list-style: none;
+  }
+}

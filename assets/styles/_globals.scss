@@ -120,11 +120,23 @@ a {
     }
 }
 
-.wp-block[data-type^="tergos"] {
-    background-color: transparent !important;
-    padding: 0 !important;
-    margin: 0 !important;
+.wp-block[data-type^="tergos"],
+.wp-block[data-type^="components"],
+.wp-block[data-type^="blocks"] {
+    & > * {
+        padding-block: 1rem;
+        min-height: 100px;
+
+        @include hover {
+            outline: 1px dashed var(--color-black);
+            outline-offset: -2px;
+        }
+    }
 }
+
+// .wp-block[data-type="tergos/grid-item"] {
+//     width: 100%;
+// }
 
 .wp-block {
     max-width: none !important;
@@ -133,4 +145,8 @@ a {
 .is-root-container {
     max-width: 1440px !important;
     margin-inline: auto !important;
+}
+
+.acf-innerblocks-container {
+    display: contents;
 }

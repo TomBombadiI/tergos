@@ -29,6 +29,12 @@ function get_logo_svg_src(): string
   return file_get_contents($logo_src);
 }
 
+function get_svg_source(string $icon_name): string
+{
+  $icon_path = assets_path("/icons/$icon_name.svg");
+  return file_get_contents($icon_path);
+}
+
 function get_acf_option(string $key): mixed
 {
   return get_field($key, 'option');

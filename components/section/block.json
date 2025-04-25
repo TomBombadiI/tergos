@@ -1,0 +1,17 @@
+{
+  "name": "components/section",
+  "title": "Секция",
+  "description": "Секция",
+  "style": [
+    "file:./section.css"
+  ],
+  "category": "layout",
+  "icon": "page",
+  "keywords": [
+    "section"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "section.php"
+  }
+}

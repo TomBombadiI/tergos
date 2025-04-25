@@ -1,0 +1,23 @@
+{
+  "name": "tergos/grid",
+  "title": "Сетка",
+  "description": "Сетка",
+  "style": [
+    "file:./grid.css"
+  ],
+  "script": [
+    "file:./grid.js"
+  ],
+  "category": "layout",
+  "icon": "grid-view",
+  "keywords": [
+    "grid"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "grid.php"
+  },
+  "supports": {
+    "innerBlocks": true
+  }
+}
