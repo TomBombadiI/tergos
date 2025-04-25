@@ -3,4 +3,6 @@ import fitTextToContainer from './utils/fitTextToContainer.js';
 /** @type {HTMLElement} */
 const footerTitleElement = document.querySelector('.footer__title');
 
-fitTextToContainer(footerTitleElement, { maxSize: 168, minSize: 44 });
+if (footerTitleElement) {
+  fitTextToContainer(footerTitleElement, { maxSize: 168, minSize: 44 });
+}

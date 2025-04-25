@@ -1,13 +1,13 @@
 <?php
 
-// правильный способ подключить стили и скрипты темы
 add_action('wp_enqueue_scripts', 'theme_add_scripts');
+add_action('enqueue_block_editor_assets', 'theme_add_scripts');
 
 function theme_add_scripts()
 {
-  // подключаем файл стилей темы
   wp_enqueue_style('main', assets('/styles/main.css'), ver: VERSION);
+  wp_enqueue_style('benefits', get_template_directory_uri() . '/blocks/benefits/benefits.css', ver: VERSION);
+  wp_enqueue_style('catalog-card', get_template_directory_uri() . '/blocks/catalog-card/catalog-card.css', ver: VERSION);
 
-  // подключаем js файл темы
   wp_enqueue_script_module('main', assets('/scripts/main.js'), version: VERSION);
 }

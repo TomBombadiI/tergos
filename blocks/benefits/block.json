@@ -1,0 +1,16 @@
+{
+  "name": "blocks/benefits",
+  "title": "Блок преимуществ",
+  "description": "Блок преимуществ",
+  "style": "benefits",
+  "editorStyle": "benefits",
+  "category": "theme",
+  "icon": "plus",
+  "keywords": [
+    "benefits"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "benefits.php"
+  }
+}

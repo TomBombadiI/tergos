@@ -35,6 +35,10 @@ h6,
     font-weight: 500;
     color: var(--color-black-alt);
     line-height: 1;
+
+    &:where([class]) {
+        margin: 0;
+    }
 }
 
 h1,
@@ -123,9 +127,12 @@ a {
 .wp-block[data-type^="tergos"],
 .wp-block[data-type^="components"],
 .wp-block[data-type^="blocks"] {
+    margin: 0;
+    height: 100%;
+
     & > * {
-        padding-block: 1rem;
         min-height: 100px;
+        height: 100%;
 
         @include hover {
             outline: 1px dashed var(--color-black);
@@ -134,10 +141,6 @@ a {
     }
 }
 
-// .wp-block[data-type="tergos/grid-item"] {
-//     width: 100%;
-// }
-
 .wp-block {
     max-width: none !important;
 }
@@ -145,6 +148,7 @@ a {
 .is-root-container {
     max-width: 1440px !important;
     margin-inline: auto !important;
+    background-color: var(--color-white-alt);
 }
 
 .acf-innerblocks-container {

@@ -2,8 +2,9 @@
   "name": "blocks/catalog-card",
   "title": "Карточка каталога",
   "description": "Карточка каталога",
-  "style": "catalog-card",
-  "editorStyle": "catalog-card",
+  "style": [
+    "file:./catalog-card.css"
+  ],
   "category": "layout",
   "icon": "page",
   "keywords": [

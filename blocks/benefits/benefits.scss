@@ -1,0 +1,57 @@
+@use "../../assets/styles/helpers" as *;
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  &__title {
+    letter-spacing: calc(42px * -0.06);
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    row-gap: fluid(24, 16);
+    padding: 0;
+  }
+
+  &__item {
+    padding-block: 2rem;
+    border-bottom: var(--border-gray);
+    position: relative;
+
+    &-dots {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 8px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      flex-wrap: wrap;
+    }
+
+    &-dot {
+      @include square(6px);
+
+      border-radius: 50%;
+      background-color: var(--color-black-alt-o32);
+
+      &.is-active {
+        @include square(8px);
+
+        background-color: var(--color-black-alt);
+      }
+    }
+
+    &-label {
+      line-height: 1.1;
+      letter-spacing: calc(24px * -0.07);
+    }
+  }
+}

@@ -2,9 +2,9 @@
 
 const VERSION = "1.0.0";
 
+require __DIR__ . '/core/enqueue-scripts.php';
 require __DIR__ . '/core/editor-settings.php';
 require __DIR__ . '/core/register-blocks.php';
-require __DIR__ . '/core/enqueue-scripts.php';
 
 function assets(string $path): string
 {
