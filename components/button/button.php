@@ -25,11 +25,13 @@ $classes = array_merge($classes, $block['classes'] ?? []);
 
 $class_names = implode(' ', array_filter($classes));
 
+$popup = $block['popup'] ?? get_field('popup') ?? null;
+
 ?>
 
 <<?= $tag_name ?>
   <?= $href ? "href=$href" : 'type="button"' ?>
-  class="<?= $class_names ?>"
+  class="<?= $class_names ?>" <?= $popup ? "data-popup-target='$popup'" : '' ?>
 
   >
 

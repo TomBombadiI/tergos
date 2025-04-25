@@ -1,0 +1,23 @@
+{
+  "name": "components/popup",
+  "title": "Модальное окно",
+  "description": "Модальное окно",
+  "style": [
+    "popup"
+  ],
+  "editorStyle": [
+    "popup"
+  ],
+  "script": [
+    "popup"
+  ],
+  "category": "layout",
+  "icon": "tablet",
+  "keywords": [
+    "popup"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "popup.php"
+  }
+}

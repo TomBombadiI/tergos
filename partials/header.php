@@ -20,7 +20,8 @@
             'blockName' => 'tergos/button',
             'attrs' => [
               'label' => 'Связаться с нами',
-              'className' => 'transparent'
+              'className' => 'transparent',
+              'popup' => 'feedback-popup'
             ]
           ]) ?>
         </div>
