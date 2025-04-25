@@ -51,7 +51,6 @@ class Grid {
 const initGrids = () => {
   const grids = document.querySelectorAll('[data-grid]');
   grids.forEach(grid => {
-    // Чтобы не инициализировать повторно
     if (!grid.dataset.gridReady) {
       new Grid(grid);
       grid.dataset.gridReady = 'true';

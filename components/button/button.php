@@ -21,6 +21,8 @@ if (!empty($block['textColor'])) {
   $classes[] = 'has-' . $block['textColor'] . '-color';
 }
 
+$classes = array_merge($classes, $block['classes'] ?? []);
+
 $class_names = implode(' ', array_filter($classes));
 
 ?>

@@ -3,7 +3,7 @@
 ._button {
   @include flex-center(true);
 
-  column-gap: .25rem;
+  column-gap: 0.25rem;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 12px;
@@ -15,7 +15,6 @@
   line-height: 1.15;
   text-decoration: none;
   transition-duration: var(--transition-duration);
-
 
   @include hover {
     color: var(--color-white);

@@ -12,7 +12,7 @@ $items = $block['items'] ?? get_field('items') ?? [
 ?>
 
 <div class="benefits">
-  <h2 class="benefits__title"><?= $title ?></h2>
+  <h2 class="benefits__title h2"><?= $title ?></h2>
   <ul class="benefits__list">
 
     <?php foreach ($items as $index => $item): ?>

@@ -1,0 +1,26 @@
+{
+  "name": "blocks/partners",
+  "title": "Блок партнеров",
+  "description": "Слайдер с партнерами",
+  "style": [
+    "partners",
+    "swiper"
+  ],
+  "editorStyle": [
+    "partners",
+    "swiper"
+  ],
+  "script": [
+    "partners",
+    "swiper"
+  ],
+  "category": "theme",
+  "icon": "groups",
+  "keywords": [
+    "partners"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "partners.php"
+  }
+}

@@ -15,8 +15,8 @@
     --color-gray-alt: #505154;
     --color-gray-alt-2: #b1b1b1;
 
-    --color-theme: #254cba;
-    --color-theme-alt: #2e59cf;
+    --color-theme: var(--color-black-alt);
+    --color-theme-alt: var(--color-black-alt-2);
 
     // fonts
     --font-primary: "Inter", sans-serif;
@@ -26,7 +26,7 @@
     --font-size-l: #{fluid(24, 16)};
     --font-size-md: 14;
     --font-size-s: #{fluid(12, 10)};
-    --font-size-xs: 10;
+    --font-size-xs: 10px;
 
     // margins
     --section-padding-y: 64px;
